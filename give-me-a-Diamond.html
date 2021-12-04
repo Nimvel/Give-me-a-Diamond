@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function diamond(n){
+        let diam = "";
+        let a = 1;
+        if (n > 0 && n % 2 === 1) {
+            for (let i = 1; i <= n; i++) {
+            diam += ' '.repeat((n - a)/2) + "*".repeat(a) + "\n";
+            i >= n/2 ? a -= 2 : a += 2;
+            }
+        return diam;
+        }
+        else {
+            return null;
+        }
+        }
+    </script>
+</body>
+</html>
